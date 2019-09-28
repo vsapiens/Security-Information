@@ -30,7 +30,11 @@ string encrypt(string sText, string key)
     for (int i = 0; i < dimY; i++)
     {
         for (int j = 0; j < n && iCounter < k; j++, iCounter++)
+        {
             mat[i] += sText[iCounter];
+            cout << sText[iCounter] << " ";
+        }
+        cout << endl;
     }
 
     iCounter = 0;
@@ -38,7 +42,9 @@ string encrypt(string sText, string key)
     for (int j = 0; j < n && iCounter < k; j++, iCounter++)
     {
         for (int i = 0; i < dimY; i++)
+        {
             result += mat[i][j];
+        }
     }
     return result;
 }
@@ -55,7 +61,10 @@ string decrypt(string sText, string key)
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < dimY && iCounter < k; j++, iCounter++)
+        {
             mat[i] += sText[iCounter];
+            cout << sText[iCounter] << " ";
+        }
     }
 
     iCounter = 0;
@@ -73,7 +82,7 @@ int main()
 {
     string sTextDecrypted;
     string sTextEncrypted;
-    string key = "SIDIOUS";
+    string key = "SIDIOU";
     sTextDecrypted = "MAY THE FORCE BE WITH YOU";
 
     trim(sTextDecrypted);

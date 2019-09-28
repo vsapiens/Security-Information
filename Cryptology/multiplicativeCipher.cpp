@@ -26,7 +26,7 @@ int main()
 {
     string sTextDecrypted;
 
-    sTextDecrypted = "HOLA COMO ESTAS";
+    sTextDecrypted = "OMAR";
     int key = 7;
 
     cout << encrypt(sTextDecrypted, key) << endl;
