@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "*.l": "c",
-        "iosfwd": "cpp"
+        "iosfwd": "cpp",
+        "string": "cpp"
     }
 }

@@ -11,7 +11,7 @@ void trim(string &sText)
 
     for (int j = 0; j < sText.length(); j++)
     {
-        if (sText[j] != ' ')
+        if (!isspace((int)sText[j]))
             result += sText[j];
     }
 
@@ -65,8 +65,9 @@ string decrypt(string sText, string key)
             mat[i] += sText[iCounter];
             cout << sText[iCounter] << " ";
         }
+        cout << endl;
     }
-
+    cout << endl;
     iCounter = 0;
 
     for (int j = 0; j < dimY && iCounter < k; j++, iCounter++)
